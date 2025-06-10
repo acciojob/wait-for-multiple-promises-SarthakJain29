@@ -30,7 +30,7 @@ Promise.all(promises).then((times) =>{
 	totalLabel.textContent = "Total";
 	total.appendChild(totalLabel);
 	const totalVal = document.createElement("td");
-	totalVal.textContent = Math.max(...times.map(Number)).toFixed(3));
+	totalVal.textContent = Math.max(...times.map(Number)).toFixed(3);
 	total.appendChild(totalVal);
 	tbody.appendChild(total);
 })
